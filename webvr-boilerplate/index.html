@@ -150,8 +150,8 @@ function onLoad() {
 
   // Apply VR stereo rendering to renderer.
   effect = new THREE.VREffect(renderer);
-  effect.setSize(window.innerWidth, window.innerHeight);
-
+  effect.setSize(window.innerWidth, window.innerHeight);  
+  
   // Add a repeating grid as a skybox.
   var loader = new THREE.TextureLoader();
   loader.load('img/box.png', onTextureLoaded);
